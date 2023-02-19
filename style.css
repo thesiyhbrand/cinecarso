@@ -1,0 +1,207 @@
+@font-face {
+    font-family: ivymode;
+    src: url('/fonts/IvyMode-Light.ttf');
+}
+
+@font-face {
+    font-family: ivymoder;
+    src: url('/fonts/IvyMode-Regular.ttf');
+}
+
+@font-face {
+    font-family: product sans;
+    src: url('/fonts/Product\ Sans\ Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.overlay{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(19, 19, 19), rgba(255, 255, 0, 0), rgb(19, 19, 19));
+}
+
+/* #one{
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+} */
+
+#two {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(27, 27, 27);
+    padding: 0vw 15vw 0vw 20vw;
+}
+
+.textarea {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    z-index: 9;
+}
+
+.textarea h1{
+    overflow: hidden;
+    font-family: ivymode;
+    font-size: 6vw;
+    color: rgb(212, 212, 212);
+}
+
+.textarea p{
+    font-family: product sans;
+    font-size: .8vw;
+    color: rgb(212, 212, 212);
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+
+.textarea a{
+    width: 100%;
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    font-family: product sans;
+    text-decoration: none;
+    color: rgb(212, 212, 212);
+    /* transition: all cubic-bezier(0.19, 1, 0.22, 1)1s; */
+}
+
+.textarea a:hover{
+    gap: 1vw;
+}
+
+.textarea a h3{
+    font-size: .8vw;
+}
+
+.textarea h2{
+    font-family: product sans;
+    margin-top: 1vw;
+    font-size: .6vw;
+    color: rgb(133, 133, 133);
+
+}
+
+.lineone{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 1vw; */
+    width: 20%;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+}
+
+.innerline{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 100%;
+    height: 200vh;
+}
+
+#linetwo{
+    margin-top: -100vh;
+}
+
+.cards{
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+#lineone .cards:nth-child(1){
+    background-image: url(https://www.cinecasero.uy/img/hmd/hmd-1.jpg);
+}
+
+#lineone .cards:nth-child(2){
+    background-image: url(https://www.cinecasero.uy/img/hmd/hmd-2.jpg);
+}
+
+#lineone .cards:nth-child(3){
+    background-image: url(https://www.cinecasero.uy/img/hmd/hmd-3.jpg);
+}
+
+#lineone .cards:nth-child(4){
+    background-image: url(https://www.cinecasero.uy/img/hmd/hmd-4.jpg);
+}
+
+#lineone .cards:nth-child(5){
+    background-image: url(https://www.cinecasero.uy/img/hmd/hmd-5.jpg);
+}
+
+#linetwo .cards:nth-child(1){
+    background-image: url(https://www.cinecasero.uy/img/hmd/hmd-6.jpg);
+}
+
+#linetwo .cards:nth-child(2){
+    background-image: url(https://www.cinecasero.uy/img/hmd/hmd-7.jpg);
+}
+
+#linetwo .cards:nth-child(3){
+    background-image: url(https://www.cinecasero.uy/img/hmd/hmd-8.jpg);
+}
+
+#linetwo .cards:nth-child(4){
+    background-image: url(https://www.cinecasero.uy/img/hmd/hmd-9.jpg);
+}
+
+#linetwo .cards:nth-child(5){
+    background-image: url(https://www.cinecasero.uy/img/hmd/hmd-10.jpg);
+}
+
+
+.c-old {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://www.cinecasero.uy/img/old.webp);
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    z-index: 150;
+    pointer-events: none;
+}
+
+.c-noise {
+    background-image: url(https://www.cinecasero.uy/img/noise-full.png);
+    height: 300%;
+    left: -50%;
+    opacity: .032;
+    position: fixed;
+    top: -100%;
+    width: 300%;
+    z-index: 100;
+    pointer-events: none;
+}
